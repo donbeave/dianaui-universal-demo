@@ -48,7 +48,7 @@
                     </b:NavbarHeader>
                     <b:NavbarCollapse b:id="navbar-collapse">
                         <b:NavbarNav>
-                            <b:AnchorListItem text="Setup" targetHistoryToken="{nameTokens.getSetup}"/>
+                            <b:AnchorListItem text="Getting started" targetHistoryToken="{nameTokens.getSetup}"/>
                             <b:ListDropDown>
                                 <b:AnchorButton dataToggle="DROPDOWN">CSS</b:AnchorButton>
                                 <b:DropDownMenu>
