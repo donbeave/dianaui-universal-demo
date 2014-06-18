@@ -14,12 +14,12 @@
     <b:Row>
         <b:Column size="XS_12">
             <b:Jumbotron>
-                <b:Heading size="H1" text="Demo for GwtBootstrap"/>
+                <b:Heading size="H1" text="Demo for GwtBootstrap3"/>
 
                 <b.html:Paragraph>
                     <a href="http://gwtproject.org/">GWT</a>
                     wrapper for
-                    <a href="http://getbootstrap.com/">Twitter Bootstrap</a>
+                    <a href="http://getbootstrap.com/">Bootstrap</a>
                 </b.html:Paragraph>
 
                 <b.html:Paragraph>
