@@ -20,7 +20,6 @@ package org.gwtbootstrap3.demo.client.place;
  * #L%
  */
 
-
 /**
  * @author Joshua Godi
  */
@@ -73,9 +72,14 @@ public class NameTokens {
     // Extra Pages
     public static final String DATETIME_PICKER = "dateTimePicker";
     public static final String BOOTBOX = "bootbox";
+    public static final String CARD = "card";
     public static final String SELECT = "select";
     public static final String SLIDER = "slider";
     public static final String SUMMERNOTE = "summernote";
+    public static final String TOGGLESWITCH = "toggleswitch";
+    public static final String OFFLINE = "offline";
+    public static final String GROWL = "growl";
+    public static final String FULL_CALENDAR = "fullcalendar";
 
     // Getters for UiBinders
 
@@ -147,6 +151,13 @@ public class NameTokens {
         return ICONS;
     }
 
+    public static String getGrowl() {
+        return GROWL;
+    }
+
+    public static String getFullCalendar() {
+        return FULL_CALENDAR;
+    }
     public static String getInputGroups() {
         return INPUT_GROUPS;
     }
@@ -239,11 +250,23 @@ public class NameTokens {
         return SUMMERNOTE;
     }
 
+    public static String getToggleSwitch() {
+        return TOGGLESWITCH;
+    }
+
+    public static String getOffline() {
+        return OFFLINE;
+    }
+
     public static String getTabs() {
         return TABS;
     }
 
     public static String getSelect() {
         return SELECT;
+    }
+
+    public static String getCard() {
+        return CARD;
     }
 }

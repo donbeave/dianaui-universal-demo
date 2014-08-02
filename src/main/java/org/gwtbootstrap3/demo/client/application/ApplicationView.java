@@ -20,7 +20,6 @@ package org.gwtbootstrap3.demo.client.application;
  * #L%
  */
 
-
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.user.client.ui.IsWidget;
@@ -41,12 +40,12 @@ public class ApplicationView extends ViewImpl implements ApplicationPresenter.My
     }
 
     @Inject
-    ApplicationView(Binder binder) {
+    ApplicationView(final Binder binder) {
         initWidget(binder.createAndBindUi(this));
     }
 
     @Override
-    public void setInSlot(Object slot, final IsWidget content) {
+    public void setInSlot(final Object slot, final IsWidget content) {
         if (slot == ApplicationPresenter.TYPE_SetMainContent) {
             contentContainer.setWidget(content);
         } else {

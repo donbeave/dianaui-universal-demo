@@ -20,7 +20,6 @@ package org.gwtbootstrap3.demo.client.application.css;
  * #L%
  */
 
-
 import com.google.inject.Inject;
 import com.google.web.bindery.event.shared.EventBus;
 import com.gwtplatform.mvp.client.Presenter;
@@ -42,9 +41,9 @@ public class FormsPresenter extends Presenter<FormsPresenter.MyView, FormsPresen
     }
 
     @Inject
-    public FormsPresenter(EventBus eventBus,
-                          MyView view,
-                          MyProxy proxy) {
+    public FormsPresenter(final EventBus eventBus,
+                          final MyView view,
+                          final MyProxy proxy) {
         super(eventBus, view, proxy, ApplicationPresenter.TYPE_SetMainContent);
     }
 }

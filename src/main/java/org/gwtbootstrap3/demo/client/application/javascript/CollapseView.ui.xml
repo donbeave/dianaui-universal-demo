@@ -1,13 +1,25 @@
-<!-- #%L GwtBootstrap3 %% Copyright (C) 2013 GwtBootstrap3 %% Licensed under
-	the Apache License, Version 2.0 (the "License"); you may not use this file
-	except in compliance with the License. You may obtain a copy of the License
-	at http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable
-	law or agreed to in writing, software distributed under the License is distributed
-	on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either
-	express or implied. See the License for the specific language governing permissions
-	and limitations under the License. #L% -->
+<!--
+  #%L
+  GwtBootstrap3
+  %%
+  Copyright (C) 2013 - 2014 GwtBootstrap3
+  %%
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+  
+       http://www.apache.org/licenses/LICENSE-2.0
+  
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  #L%
+  -->
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
              xmlns:b="urn:import:org.gwtbootstrap3.client.ui"
+             xmlns:b.html="urn:import:org.gwtbootstrap3.client.ui.html"
              xmlns:d="urn:import:org.gwtbootstrap3.demo.client.ui">
 
     <ui:style>
@@ -31,47 +43,40 @@
             <b:PageHeader text="Collapse"/>
 
             <b:BlockQuote addStyleNames="{style.danger}">
-                <b:Heading addStyleNames="{style.margin-fix}" size="4"
+                <b:Heading addStyleNames="{style.margin-fix}" size="H4"
                            text="Cross-browser compatibility"/>
-                <b:Paragraph>
-                    <b>Transition animations not supported in Internet Explorer 8 &amp;
-                        9
-                    </b>
+                <b.html:Paragraph>
+                    <b>Transition animations not supported in Internet Explorer 8 &amp; 9</b>
                     <br/>
-                    Bootstrap exclusively uses CSS3 for its animations, but Internet
-                    Explorer 8 &amp; 9 don't support the
-                    necessary CSS properties. Thus,
-                    there are no slide transition animations
-                    when using these browsers.
-                    We
-                    have intentionally decided not to include jQuery-based fallbacks
-                    for
-                    the transitions.
-                </b:Paragraph>
+                    Bootstrap exclusively uses CSS3 for its animations, but Internet Explorer 8 &amp; 9 don't support
+                    the
+                    necessary CSS properties. Thus, there are no slide transition animations when using these browsers.
+                    We have intentionally decided not to include jQuery-based fallbacks for the transitions.
+                </b.html:Paragraph>
             </b:BlockQuote>
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Collapse via Button target"/>
+                    <b:Heading size="H3" text="Collapse via Button target"/>
                 </b:PanelHeader>
                 <b:PanelBody>
-                    <b:Button type="DANGER" toggle="COLLAPSE" target="#demoCollapse">
+                    <b:Button type="DANGER" dataToggle="COLLAPSE" dataTarget="#demoCollapse">
                         Collapse Me
                     </b:Button>
-                    <b:ClearFix addStyleNames="{style.margin}"/>
+                    <b.html:ClearFix addStyleNames="{style.margin}"/>
                     <b:Collapse ui:field="demoCollapse" b:id="demoCollapse">
                         <b:Well>
-                            <b:Paragraph>
+                            <b.html:Paragraph>
                                 You can also use the plugin without the accordion
                                 markup. Make a button toggle the expanding and collapsing of
                                 another element.
-                            </b:Paragraph>
+                            </b.html:Paragraph>
                         </b:Well>
                     </b:Collapse>
                 </b:PanelBody>
                 <b:PanelFooter>
                     <d:PrettyPre addStyleNames="lang-xml">
-                        &lt;b:Button type="..." toggle="COLLAPSE" target="#demoCollapse" text="Collapse Me"/&gt;\n
+                        &lt;b:Button type="..." dataToggle="COLLAPSE" dataTarget="#demoCollapse" text="Collapse Me"/&gt;\n
                         &lt;b:Collapse b:id="demoCollapse&gt;\n
                         \s\sWidget To Collapse\n
                         &lt;/b:Collapse&gt;\n
@@ -81,52 +86,52 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Accordion Example using PanelCollapse"/>
+                    <b:Heading size="H3" text="Accordion Example using PanelCollapse"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b:PanelGroup b:id="accordion">
                         <b:Panel>
                             <b:PanelHeader>
-                                <b:HeadingPanel size="4">
-                                    <b:Anchor toggle="COLLAPSE" dataParent="#accordion" target="#collapseOne"
+                                <b:Heading size="H4">
+                                    <b:Anchor dataToggle="COLLAPSE" dataParent="#accordion" dataTarget="#collapseOne"
                                               text="Collapse Group #1"/>
-                                </b:HeadingPanel>
+                                </b:Heading>
                             </b:PanelHeader>
                             <b:PanelCollapse b:id="collapseOne" in="true">
                                 <b:PanelBody>
-                                    <b:Paragraph>
+                                    <b.html:Paragraph>
                                         I am the content of Collapse Group #1.
-                                    </b:Paragraph>
+                                    </b.html:Paragraph>
                                 </b:PanelBody>
                             </b:PanelCollapse>
                         </b:Panel>
                         <b:Panel>
                             <b:PanelHeader>
-                                <b:HeadingPanel size="4">
-                                    <b:Anchor toggle="COLLAPSE" dataParent="#accordion" target="#collapseTwo"
+                                <b:Heading size="H4">
+                                    <b:Anchor dataToggle="COLLAPSE" dataParent="#accordion" dataTarget="#collapseTwo"
                                               text="Collapse Group #2"/>
-                                </b:HeadingPanel>
+                                </b:Heading>
                             </b:PanelHeader>
                             <b:PanelCollapse b:id="collapseTwo">
                                 <b:PanelBody>
-                                    <b:Paragraph>
+                                    <b.html:Paragraph>
                                         I am the content of Collapse Group #1.
-                                    </b:Paragraph>
+                                    </b.html:Paragraph>
                                 </b:PanelBody>
                             </b:PanelCollapse>
                         </b:Panel>
                         <b:Panel>
                             <b:PanelHeader>
-                                <b:HeadingPanel size="4">
-                                    <b:Anchor icon="ANCHOR" toggle="COLLAPSE" dataParent="#accordion"
-                                              target="#collapseThree" text="Collapse Group #3"/>
-                                </b:HeadingPanel>
+                                <b:Heading size="H4">
+                                    <b:Anchor icon="ANCHOR" dataToggle="COLLAPSE" dataParent="#accordion"
+                                              dataTarget="#collapseThree" text="Collapse Group #3"/>
+                                </b:Heading>
                             </b:PanelHeader>
                             <b:PanelCollapse b:id="collapseThree">
                                 <b:PanelBody>
-                                    <b:Paragraph>
+                                    <b.html:Paragraph>
                                         I am the content of Collapse Group #1.
-                                    </b:Paragraph>
+                                    </b.html:Paragraph>
                                 </b:PanelBody>
                             </b:PanelCollapse>
                         </b:Panel>
@@ -137,7 +142,10 @@
                         &lt;b:PanelGroup b:id="accordion"&gt;\n
                         \s\s&lt;b:Panel&gt;\n
                         \s\s\s\s&lt;b:PanelHeader&gt;\n
-                        \s\s\s\s\s\s&lt;b:Anchor toggle="COLLAPSE" dataParent="#accordion" target="#collapseOne"/&gt;\n
+                        \s\s\s\s\s\s&lt;b:Heading size="H4"&gt;\n
+                        \s\s\s\s\s\s\s\s&lt;b:Anchor dataToggle="COLLAPSE" dataParent="#accordion"
+                        dataTarget="#collapseOne"/&gt;\n
+                        \s\s\s\s\s\s&lt;/b:Heading&gt;\n
                         \s\s\s\s&lt;/b:PanelHeader&gt;\n
                         \s\s\s\s&lt;b:PanelCollapse b:id="collapseOne"&gt;\n
                         \s\s\s\s\s\s&lt;b:PanelBody&gt;\n
@@ -147,7 +155,10 @@
                         \s\s&lt;/b:Panel&gt;\n
                         \s\s&lt;b:Panel&gt;\n
                         \s\s\s\s&lt;b:PanelHeader&gt;\n
-                        \s\s\s\s\s\s&lt;b:Anchor toggle="COLLAPSE" dataParent="#accordion" target="#collapseTwo"/&gt;\n
+                        \s\s\s\s\s\s&lt;b:Heading size="H4"&gt;\n
+                        \s\s\s\s\s\s\s\s&lt;b:Anchor dataToggle="COLLAPSE" dataParent="#accordion"
+                        dataTarget="#collapseTwo"/&gt;\n
+                        \s\s\s\s\s\s&lt;/b:Heading&gt;\n
                         \s\s\s\s&lt;/b:PanelHeader&gt;\n
                         \s\s\s\s&lt;b:PanelCollapse b:id="collapseTwo"&gt;\n
                         \s\s\s\s\s\s&lt;b:PanelBody&gt;\n
@@ -157,8 +168,95 @@
                         \s\s&lt;/b:Panel&gt;\n
                         \s\s&lt;b:Panel&gt;\n
                         \s\s\s\s&lt;b:PanelHeader&gt;\n
-                        \s\s\s\s\s\s&lt;b:Anchor icon="..." toggle="COLLAPSE" dataParent="#accordion"
-                        target="#collapseThree"/&gt;\n
+                        \s\s\s\s\s\s&lt;b:Heading size="H4"&gt;\n
+                        \s\s\s\s\s\s\s\s&lt;b:Anchor icon="..." dataToggle="COLLAPSE" dataParent="#accordion"
+                        dataTarget="#collapseThree"/&gt;\n
+                        \s\s\s\s\s\s&lt;/b:Heading&gt;\n
+                        \s\s\s\s&lt;/b:PanelHeader&gt;\n
+                        \s\s\s\s&lt;b:PanelCollapse b:id="collapseThree"&gt;\n
+                        \s\s\s\s\s\s&lt;b:PanelBody&gt;\n
+                        \s\s\s\s\s\s\s\sWidgets\n
+                        \s\s\s\s\s\s&lt;/b:PanelBody&gt;\n
+                        \s\s\s\s&lt;/b:PanelCollapse&gt;\n
+                        \s\s&lt;/b:Panel&gt;\n
+                        &lt;/b:PanelGroup&gt;\n
+                    </d:PrettyPre>
+                </b:PanelFooter>
+            </b:Panel>
+
+            <b:Panel>
+                <b:PanelHeader>
+                    <b:Heading size="H3" text="Accordion Example using PanelCollapse (whole header)"/>
+                </b:PanelHeader>
+                <b:PanelBody>
+                    <b:PanelGroup b:id="accordion2">
+                        <b:Panel>
+                            <b:PanelHeader dataToggle="COLLAPSE" dataParent="#accordion2" dataTarget="#collapseFour">
+                                <b:Heading size="H4" text="Collapse Me"/>
+                            </b:PanelHeader>
+                            <b:PanelCollapse b:id="collapseFour" in="true">
+                                <b:PanelBody>
+                                    <b.html:Paragraph>
+                                        I am the content of Collapse Group!
+                                    </b.html:Paragraph>
+                                </b:PanelBody>
+                            </b:PanelCollapse>
+                        </b:Panel>
+                        <b:Panel>
+                            <b:PanelHeader dataToggle="COLLAPSE" dataParent="#accordion2" dataTarget="#collapseFive">
+                                <b:Heading size="H4" text="Collapse Me"/>
+                            </b:PanelHeader>
+                            <b:PanelCollapse b:id="collapseFive">
+                                <b:PanelBody>
+                                    <b.html:Paragraph>
+                                        I am the content of Collapse!
+                                    </b.html:Paragraph>
+                                </b:PanelBody>
+                            </b:PanelCollapse>
+                        </b:Panel>
+                        <b:Panel>
+                            <b:PanelHeader dataToggle="COLLAPSE" dataParent="#accordion2" dataTarget="#collapseSix">
+                                <b:Heading size="H4" text="Collapse Me"/>
+                            </b:PanelHeader>
+                            <b:PanelCollapse b:id="collapseSix">
+                                <b:PanelBody>
+                                    <b.html:Paragraph>
+                                        I am the content of Collapse!
+                                    </b.html:Paragraph>
+                                </b:PanelBody>
+                            </b:PanelCollapse>
+                        </b:Panel>
+                    </b:PanelGroup>
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <d:PrettyPre addStyleNames="lang-xml">
+                        &lt;b:PanelGroup b:id="accordion"&gt;\n
+                        \s\s&lt;b:Panel&gt;\n
+                        \s\s\s\s&lt;b:PanelHeader dataToggle="COLLAPSE" dataParent="#accordion2"
+                        dataTarget="#collapseFour"&gt;\n
+                        \s\s\s\s\s\s&lt;b:Heading size="H4" text="..."/&gt;\n
+                        \s\s\s\s&lt;/b:PanelHeader&gt;\n
+                        \s\s\s\s&lt;b:PanelCollapse b:id="collapseOne"&gt;\n
+                        \s\s\s\s\s\s&lt;b:PanelBody&gt;\n
+                        \s\s\s\s\s\s\s\sWidgets\n
+                        \s\s\s\s\s\s&lt;/b:PanelBody&gt;\n
+                        \s\s\s\s&lt;/b:PanelCollapse&gt;\n
+                        \s\s&lt;/b:Panel&gt;\n
+                        \s\s&lt;b:Panel&gt;\n
+                        \s\s\s\s&lt;b:PanelHeader dataToggle="COLLAPSE" dataParent="#accordion2"
+                        dataTarget="#collapseFive"&gt;\n
+                        \s\s\s\s\s\s&lt;b:Heading size="H4" text="..."/&gt;\n
+                        \s\s\s\s&lt;/b:PanelHeader&gt;\n
+                        \s\s\s\s&lt;b:PanelCollapse b:id="collapseTwo"&gt;\n
+                        \s\s\s\s\s\s&lt;b:PanelBody&gt;\n
+                        \s\s\s\s\s\s\s\sWidgets\n
+                        \s\s\s\s\s\s&lt;/b:PanelBody&gt;\n
+                        \s\s\s\s&lt;/b:PanelCollapse&gt;\n
+                        \s\s&lt;/b:Panel&gt;\n
+                        \s\s&lt;b:Panel&gt;\n
+                        \s\s\s\s&lt;b:PanelHeader dataToggle="COLLAPSE" dataParent="#accordion2"
+                        dataTarget="#collapseSix"&gt;\n
+                        \s\s\s\s\s\s&lt;b:Heading size="H4" text="..."/&gt;\n
                         \s\s\s\s&lt;/b:PanelHeader&gt;\n
                         \s\s\s\s&lt;b:PanelCollapse b:id="collapseThree"&gt;\n
                         \s\s\s\s\s\s&lt;b:PanelBody&gt;\n

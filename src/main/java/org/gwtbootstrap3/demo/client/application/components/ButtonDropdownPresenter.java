@@ -20,7 +20,6 @@ package org.gwtbootstrap3.demo.client.application.components;
  * #L%
  */
 
-
 import com.google.inject.Inject;
 import com.google.web.bindery.event.shared.EventBus;
 import com.gwtplatform.mvp.client.Presenter;
@@ -45,9 +44,9 @@ public class ButtonDropdownPresenter extends Presenter<ButtonDropdownPresenter.M
     }
 
     @Inject
-    public ButtonDropdownPresenter(EventBus eventBus,
-                                   MyView view,
-                                   MyProxy proxy) {
+    public ButtonDropdownPresenter(final EventBus eventBus,
+                                   final MyView view,
+                                   final MyProxy proxy) {
         super(eventBus, view, proxy, ApplicationPresenter.TYPE_SetMainContent);
     }
 }

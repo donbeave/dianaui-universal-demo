@@ -19,6 +19,7 @@
   -->
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
              xmlns:b="urn:import:org.gwtbootstrap3.client.ui"
+             xmlns:b.html="urn:import:org.gwtbootstrap3.client.ui.html"
              xmlns:d="urn:import:org.gwtbootstrap3.demo.client.ui">
 
     <ui:style>
@@ -37,9 +38,9 @@
             <b:PageHeader text="Carousel"/>
 
             <b:BlockQuote addStyleNames="{style.danger}">
-                <b:Heading addStyleNames="{style.margin-fix}" size="4"
+                <b:Heading addStyleNames="{style.margin-fix}" size="H4"
                            text="Cross-browser compatibility"/>
-                <b:Paragraph>
+                <b.html:Paragraph>
                     <b>Transition animations not supported in Internet Explorer 8 &amp;
                         9
                     </b>
@@ -50,21 +51,21 @@
                     when using these browsers. We
                     have intentionally decided not to include jQuery-based fallbacks for
                     the transitions.
-                </b:Paragraph>
+                </b.html:Paragraph>
             </b:BlockQuote>
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Basic"/>
+                    <b:Heading size="H3" text="Basic"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b:Carousel b:id="carousel-basic">
                         <b:CarouselIndicators>
-                            <b:CarouselIndicator target="#carousel-basic"
+                            <b:CarouselIndicator dataTarget="#carousel-basic"
                                                  dataSlideTo="0" active="true"/>
-                            <b:CarouselIndicator target="#carousel-basic"
+                            <b:CarouselIndicator dataTarget="#carousel-basic"
                                                  dataSlideTo="1"/>
-                            <b:CarouselIndicator target="#carousel-basic"
+                            <b:CarouselIndicator dataTarget="#carousel-basic"
                                                  dataSlideTo="2"/>
                         </b:CarouselIndicators>
                         <b:CarouselInner>
@@ -78,9 +79,9 @@
                                 <b:Image width="100%" url="images/carousel3.png"/>
                             </b:CarouselSlide>
                         </b:CarouselInner>
-                        <b:CarouselControl target="#carousel-basic" prev="true"
+                        <b:CarouselControl dataTarget="#carousel-basic" prev="true"
                                            iconType="CHEVRON_CIRCLE_LEFT"/>
-                        <b:CarouselControl target="#carousel-basic" next="true"
+                        <b:CarouselControl dataTarget="#carousel-basic" next="true"
                                            iconType="CHEVRON_CIRCLE_RIGHT"/>
                     </b:Carousel>
                 </b:PanelBody>
@@ -88,18 +89,18 @@
                     <d:PrettyPre addStyleNames="lang-xml">
                         &lt;b:Carousel b:id="carousel-basic"&gt;\n
                         \s\s&lt;b:CarouselIndicators&gt;\n
-                        \s\s\s\s&lt;b:CarouselIndicator target="#carousel-basic" dataSlideTo="0" active="true"/&gt;\n
-                        \s\s\s\s&lt;b:CarouselIndicator target="#carousel-basic"
+                        \s\s\s\s&lt;b:CarouselIndicator dataTarget="#carousel-basic" dataSlideTo="0" active="true"/&gt;\n
+                        \s\s\s\s&lt;b:CarouselIndicator dataTarget="#carousel-basic"
                         dataSlideTo="1"/&gt;\n
-                        \s\s\s\s&lt;b:CarouselIndicator target="#carousel-basic" dataSlideTo="2"/&gt;\n
+                        \s\s\s\s&lt;b:CarouselIndicator dataTarget="#carousel-basic" dataSlideTo="2"/&gt;\n
                         \s\s&lt;/b:CarouselIndicators&gt;\n
                         \s\s&lt;b:CarouselInner&gt;\n
-                        \s\s\s\s&lt;b:CarouselSlide&gt;\n
+                        \s\s\s\s&lt;b:CarouselSlide active="true"&gt;\n
                         \s\s\s\s\s\s&lt;b:Image url=".../&gt;\n
                         \s\s\s\s&lt;/b:CarouselSlide&gt;\n
                         \s\s&lt;/b:CarouselInner&gt;\n
-                        \s\s&lt;b:CarouselControl target="#carousel-basic" prev="true" iconType="..."/&gt;\n
-                        \s\s&lt;b:CarouselControl target="#carousel-basic" next="true"
+                        \s\s&lt;b:CarouselControl dataTarget="#carousel-basic" prev="true" iconType="..."/&gt;\n
+                        \s\s&lt;b:CarouselControl dataTarget="#carousel-basic" next="true"
                         iconType="..."/&gt;\n
                         &lt;/b:Carousel&gt;\n
                     </d:PrettyPre>
@@ -108,44 +109,44 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="With Captions"/>
+                    <b:Heading size="H3" text="With Captions"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b:Carousel b:id="carousel-captions">
                         <b:CarouselIndicators>
-                            <b:CarouselIndicator target="#carousel-captions"
+                            <b:CarouselIndicator dataTarget="#carousel-captions"
                                                  dataSlideTo="0" active="true"/>
-                            <b:CarouselIndicator target="#carousel-captions"
+                            <b:CarouselIndicator dataTarget="#carousel-captions"
                                                  dataSlideTo="1"/>
-                            <b:CarouselIndicator target="#carousel-captions"
+                            <b:CarouselIndicator dataTarget="#carousel-captions"
                                                  dataSlideTo="2"/>
                         </b:CarouselIndicators>
                         <b:CarouselInner>
                             <b:CarouselSlide active="true">
                                 <b:Image width="100%" url="images/carousel1.png"/>
                                 <b:CarouselCaption>
-                                    <b:Heading size="3" text="Slide 1"/>
-                                    <b:Paragraph text="Caption!"/>
+                                    <b:Heading size="H3" text="Slide 1"/>
+                                    <b.html:Paragraph text="Caption!"/>
                                 </b:CarouselCaption>
                             </b:CarouselSlide>
                             <b:CarouselSlide>
                                 <b:Image width="100%" url="images/carousel2.png"/>
                                 <b:CarouselCaption>
-                                    <b:Heading size="3" text="Slide 2"/>
-                                    <b:Paragraph text="Caption!"/>
+                                    <b:Heading size="H3" text="Slide 2"/>
+                                    <b.html:Paragraph text="Caption!"/>
                                 </b:CarouselCaption>
                             </b:CarouselSlide>
                             <b:CarouselSlide>
                                 <b:Image width="100%" url="images/carousel3.png"/>
                                 <b:CarouselCaption>
-                                    <b:Heading size="3" text="Slide 3"/>
-                                    <b:Paragraph text="Caption!"/>
+                                    <b:Heading size="H3" text="Slide 3"/>
+                                    <b.html:Paragraph text="Caption!"/>
                                 </b:CarouselCaption>
                             </b:CarouselSlide>
                         </b:CarouselInner>
-                        <b:CarouselControl target="#carousel-captions"
+                        <b:CarouselControl dataTarget="#carousel-captions"
                                            prev="true" iconType="CHEVRON_CIRCLE_LEFT"/>
-                        <b:CarouselControl target="#carousel-captions"
+                        <b:CarouselControl dataTarget="#carousel-captions"
                                            next="true" iconType="CHEVRON_CIRCLE_RIGHT"/>
                     </b:Carousel>
                 </b:PanelBody>
@@ -153,23 +154,23 @@
                     <d:PrettyPre addStyleNames="lang-xml">
                         &lt;b:Carousel b:id="carousel-captions"&gt;\n
                         \s\s&lt;b:CarouselIndicators&gt;\n
-                        \s\s\s\s&lt;b:CarouselIndicator target="#carousel-captions" dataSlideTo="0"
+                        \s\s\s\s&lt;b:CarouselIndicator dataTarget="#carousel-captions" dataSlideTo="0"
                         active="true"/&gt;\n
-                        \s\s\s\s&lt;b:CarouselIndicator target="#carousel-captions" dataSlideTo="1"/&gt;\n
-                        \s\s\s\s&lt;b:CarouselIndicator target="#carousel-captions"
+                        \s\s\s\s&lt;b:CarouselIndicator dataTarget="#carousel-captions" dataSlideTo="1"/&gt;\n
+                        \s\s\s\s&lt;b:CarouselIndicator dataTarget="#carousel-captions"
                         dataSlideTo="2"/&gt;\n
                         \s\s&lt;/b:CarouselIndicators&gt;\n
                         \s\s&lt;b:CarouselInner&gt;\n
-                        \s\s\s\s&lt;b:CarouselSlide&gt;\n
+                        \s\s\s\s&lt;b:CarouselSlide active="true"&gt;\n
                         \s\s\s\s\s\s&lt;b:Image url=".../&gt;\n
                         \s\s\s\s\s\s&lt;b:CarouselCaption&gt;\n
                         \s\s\s\s\s\s\s\s&lt;b:Heading size="..." text="..."/&gt;\n
-                        \s\s\s\s\s\s\s\s&lt;b:Paragraph text="..."/&gt;\n
+                        \s\s\s\s\s\s\s\s&lt;b.html:Paragraph text="..."/&gt;\n
                         \s\s\s\s\s\s&lt;/b:CarouselCaption&gt;\n
                         \s\s\s\s&lt;/b:CarouselSlide&gt;\n
                         \s\s&lt;/b:CarouselInner&gt;\n
-                        \s\s&lt;b:CarouselControl target="#carousel-captions" prev="true" iconType="..."/&gt;\n
-                        \s\s&lt;b:CarouselControl target="#carousel-captions" next="true"
+                        \s\s&lt;b:CarouselControl dataTarget="#carousel-captions" prev="true" iconType="..."/&gt;\n
+                        \s\s&lt;b:CarouselControl dataTarget="#carousel-captions" next="true"
                         iconType="..."/&gt;\n
                         &lt;/b:Carousel&gt;\n
                     </d:PrettyPre>

@@ -23,16 +23,31 @@
     <inherits name="org.gwtbootstrap3.GwtBootstrap3"/>
     <inherits name="org.gwtbootstrap3.extras.datetimepicker.DateTimePicker"/>
     <inherits name="org.gwtbootstrap3.extras.bootbox.Bootbox"/>
+    <inherits name="org.gwtbootstrap3.extras.card.Card"/>
     <inherits name="org.gwtbootstrap3.extras.slider.Slider"/>
+    <inherits name="org.gwtbootstrap3.extras.toggleswitch.ToggleSwitch"/>
     <inherits name="org.gwtbootstrap3.extras.summernote.Summernote"/>
     <inherits name="org.gwtbootstrap3.extras.select.Select"/>
+    <inherits name="org.gwtbootstrap3.extras.positionedtabs.PositionedTabs"/>
     <inherits name="org.gwtbootstrap3.extras.respond.Respond"/>
+    <inherits name="org.gwtbootstrap3.extras.growl.Growl"/>
+    <inherits name="org.gwtbootstrap3.extras.fullcalendar.FullCalendar"/>
     <inherits name='com.gwtplatform.mvp.MvpWithEntryPoint'/>
 
-    <!-- Specify the paths for translatable code                    -->
+    <inherits name='org.gwtbootstrap3.extras.cachemanifest.Offline'/>
+    <add-linker name="offline"/>
+    <extend-configuration-property name="cachemanifest_static_files"
+                                   value="/gwtbootstrap3-demo/GwtBootstrap3Demo.html"/>
+
+    <!-- For SDM -->
+    <add-linker name="xsiframe"/>
+    <set-configuration-property name="devModeRedirectEnabled" value="true"/>
+    <set-configuration-property name="gwt.superdevmode" value="on"/>
+
+    <!-- Specify the paths for translatable code -->
     <source path="client"/>
 
-    <!-- GWT Modules                                                -->
+    <!-- GWT Modules -->
     <set-configuration-property name="gin.ginjector.modules"
                                 value="org.gwtbootstrap3.demo.client.gin.DemoModule"/>
 

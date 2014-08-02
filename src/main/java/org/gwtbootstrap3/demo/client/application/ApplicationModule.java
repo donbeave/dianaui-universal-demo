@@ -20,7 +20,6 @@ package org.gwtbootstrap3.demo.client.application;
  * #L%
  */
 
-
 import com.gwtplatform.mvp.client.gin.AbstractPresenterModule;
 import org.gwtbootstrap3.demo.client.application.components.*;
 import org.gwtbootstrap3.demo.client.application.css.*;
@@ -88,8 +87,13 @@ public class ApplicationModule extends AbstractPresenterModule {
         // Extra Views
         bindPresenter(DateTimePickerPresenter.class, DateTimePickerPresenter.MyView.class, DateTimePickerView.class, DateTimePickerPresenter.MyProxy.class);
         bindPresenter(BootboxJSPresenter.class, BootboxJSPresenter.MyView.class, BootboxJSView.class, BootboxJSPresenter.MyProxy.class);
+        bindPresenter(CardPresenter.class, CardPresenter.MyView.class, CardView.class, CardPresenter.MyProxy.class);
         bindPresenter(SliderPresenter.class, SliderPresenter.MyView.class, SliderView.class, SliderPresenter.MyProxy.class);
         bindPresenter(SummernotePresenter.class, SummernotePresenter.MyView.class, SummernoteView.class, SummernotePresenter.MyProxy.class);
         bindPresenter(BootstrapSelectPresenter.class, BootstrapSelectPresenter.MyView.class, BootstrapSelectView.class, BootstrapSelectPresenter.MyProxy.class);
+        bindPresenter(ToggleSwitchPresenter.class, ToggleSwitchPresenter.MyView.class, ToggleSwitchView.class, ToggleSwitchPresenter.MyProxy.class);
+        bindPresenter(OfflinePresenter.class, OfflinePresenter.MyView.class, OfflineView.class, OfflinePresenter.MyProxy.class);
+        bindPresenter(GrowlPresenter.class, GrowlPresenter.MyView.class, GrowlView.class, GrowlPresenter.MyProxy.class);
+        bindPresenter(FullCalendarPresenter.class, FullCalendarPresenter.MyView.class, FullCalendarView.class, FullCalendarPresenter.MyProxy.class);
     }
 }

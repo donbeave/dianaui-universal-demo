@@ -20,7 +20,6 @@ package org.gwtbootstrap3.demo.client.application;
  * #L%
  */
 
-
 import com.google.gwt.event.shared.GwtEvent;
 import com.google.inject.Inject;
 import com.google.web.bindery.event.shared.EventBus;
@@ -50,9 +49,9 @@ public class ApplicationPresenter extends Presenter<ApplicationPresenter.MyView,
     public static final GwtEvent.Type<RevealContentHandler<?>> TYPE_SetMainContent = new GwtEvent.Type<RevealContentHandler<?>>();
 
     @Inject
-    ApplicationPresenter(EventBus eventBus,
-                         MyView view,
-                         MyProxy proxy) {
+    ApplicationPresenter(final EventBus eventBus,
+                         final MyView view,
+                         final MyProxy proxy) {
         super(eventBus, view, proxy, RevealType.RootLayout);
     }
 }
