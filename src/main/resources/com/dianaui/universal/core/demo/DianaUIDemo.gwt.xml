@@ -1,15 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <!--
   #%L
-  GwtBootstrap3
+  Diana UI Core
   %%
-  Copyright (C) 2013 GwtBootstrap3
+  Copyright (C) 2014 Diana UI
   %%
   Licensed under the Apache License, Version 2.0 (the "License");
   you may not use this file except in compliance with the License.
   You may obtain a copy of the License at
-
+  
        http://www.apache.org/licenses/LICENSE-2.0
-
+  
   Unless required by applicable law or agreed to in writing, software
   distributed under the License is distributed on an "AS IS" BASIS,
   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -22,16 +23,10 @@
     <inherits name="com.google.gwt.inject.Inject"/>
     <inherits name="com.dianaui.universal.core.DianaUICore"/>
     <inherits name='com.gwtplatform.mvp.MvpWithEntryPoint'/>
-    <!--
-    <add-linker name="offline"/>
-    <extend-configuration-property name="cachemanifest_static_files"
-                                   value="/gwtbootstrap3-demo/GwtBootstrap3Demo.html"/>
-                                   -->
 
     <!-- For SDM -->
     <add-linker name="xsiframe"/>
     <set-configuration-property name="devModeRedirectEnabled" value="true"/>
-    <set-configuration-property name="gwt.superdevmode" value="on"/>
 
     <!-- Specify the paths for translatable code -->
     <source path="client"/>

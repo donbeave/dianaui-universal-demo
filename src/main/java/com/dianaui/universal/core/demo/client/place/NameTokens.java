@@ -1,10 +1,8 @@
-package com.dianaui.universal.core.demo.client.place;
-
 /*
  * #%L
- * GwtBootstrap3
+ * Diana UI Core
  * %%
- * Copyright (C) 2013 GwtBootstrap3
+ * Copyright (C) 2014 Diana UI
  * %%
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -19,6 +17,7 @@ package com.dianaui.universal.core.demo.client.place;
  * limitations under the License.
  * #L%
  */
+package com.dianaui.universal.core.demo.client.place;
 
 /**
  * @author Joshua Godi
@@ -158,6 +157,7 @@ public class NameTokens {
     public static String getFullCalendar() {
         return FULL_CALENDAR;
     }
+
     public static String getInputGroups() {
         return INPUT_GROUPS;
     }

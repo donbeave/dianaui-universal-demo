@@ -1,10 +1,8 @@
-package com.dianaui.universal.core.demo.client.application.components;
-
 /*
  * #%L
- * GwtBootstrap3
+ * Diana UI Core
  * %%
- * Copyright (C) 2013 GwtBootstrap3
+ * Copyright (C) 2014 Diana UI
  * %%
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -19,7 +17,10 @@ package com.dianaui.universal.core.demo.client.application.components;
  * limitations under the License.
  * #L%
  */
+package com.dianaui.universal.core.demo.client.application.components;
 
+import com.dianaui.universal.core.demo.client.application.ApplicationPresenter;
+import com.dianaui.universal.core.demo.client.place.NameTokens;
 import com.google.inject.Inject;
 import com.google.web.bindery.event.shared.EventBus;
 import com.gwtplatform.mvp.client.Presenter;
@@ -27,8 +28,6 @@ import com.gwtplatform.mvp.client.View;
 import com.gwtplatform.mvp.client.annotations.NameToken;
 import com.gwtplatform.mvp.client.annotations.ProxyCodeSplit;
 import com.gwtplatform.mvp.client.proxy.ProxyPlace;
-import com.dianaui.universal.core.demo.client.application.ApplicationPresenter;
-import com.dianaui.universal.core.demo.client.place.NameTokens;
 
 /**
  * @author Joshua Godi

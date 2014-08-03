@@ -1,10 +1,8 @@
-package com.dianaui.universal.core.demo.client.gin;
-
 /*
  * #%L
- * GwtBootstrap3
+ * Diana UI Core
  * %%
- * Copyright (C) 2013 GwtBootstrap3
+ * Copyright (C) 2014 Diana UI
  * %%
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -19,7 +17,10 @@ package com.dianaui.universal.core.demo.client.gin;
  * limitations under the License.
  * #L%
  */
+package com.dianaui.universal.core.demo.client.gin;
 
+import com.dianaui.universal.core.demo.client.application.ApplicationModule;
+import com.dianaui.universal.core.demo.client.place.NameTokens;
 import com.gwtplatform.mvp.client.annotations.DefaultPlace;
 import com.gwtplatform.mvp.client.annotations.ErrorPlace;
 import com.gwtplatform.mvp.client.annotations.GaAccount;
@@ -27,8 +28,6 @@ import com.gwtplatform.mvp.client.annotations.UnauthorizedPlace;
 import com.gwtplatform.mvp.client.gin.AbstractPresenterModule;
 import com.gwtplatform.mvp.client.gin.DefaultModule;
 import com.gwtplatform.mvp.client.googleanalytics.GoogleAnalyticsNavigationTracker;
-import com.dianaui.universal.core.demo.client.application.ApplicationModule;
-import com.dianaui.universal.core.demo.client.place.NameTokens;
 
 /**
  * @author Joshua Godi

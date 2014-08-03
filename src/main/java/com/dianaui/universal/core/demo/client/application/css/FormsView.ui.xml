@@ -1,8 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <!--
   #%L
-  GwtBootstrap3
+  Diana UI Core
   %%
-  Copyright (C) 2013 GwtBootstrap3
+  Copyright (C) 2014 Diana UI
   %%
   Licensed under the Apache License, Version 2.0 (the "License");
   you may not use this file except in compliance with the License.
@@ -193,7 +194,8 @@
                             </b:FormGroup>
 
                             <b:FormGroup>
-                                <b:InlineCheckBox text="Remember me"/> <b:InlineCheckBox text="Another check box"/>
+                                <b:InlineCheckBox text="Remember me"/>
+                                <b:InlineCheckBox text="Another check box"/>
                             </b:FormGroup>
 
                             <b:FormGroup>
@@ -217,7 +219,8 @@
                         \s\s\s\s&lt;/b:FormGroup&gt;\n
                         \n
                         \s\s\s\s&lt;b:FormGroup&gt;\n
-                        \s\s\s\s\s\s&lt;b:InlineCheckBox text="Remember me"/&gt; &lt;b:InlineCheckBox text="Another check box"/&gt;\n
+                        \s\s\s\s\s\s&lt;b:InlineCheckBox text="Remember me"/&gt; &lt;b:InlineCheckBox text="Another
+                        check box"/&gt;\n
                         \s\s\s\s&lt;/b:FormGroup&gt;\n
                         \n
                         \s\s\s\s&lt;b:FormGroup&gt;\n

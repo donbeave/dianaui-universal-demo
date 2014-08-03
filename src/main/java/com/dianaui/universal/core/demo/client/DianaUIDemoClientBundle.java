@@ -1,10 +1,8 @@
-package com.dianaui.universal.core.demo.client;
-
 /*
  * #%L
- * GwtBootstrap3
+ * Diana UI Core
  * %%
- * Copyright (C) 2013 - 2014 GwtBootstrap3
+ * Copyright (C) 2014 Diana UI
  * %%
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -19,6 +17,7 @@ package com.dianaui.universal.core.demo.client;
  * limitations under the License.
  * #L%
  */
+package com.dianaui.universal.core.demo.client;
 
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.resources.client.ClientBundle;
