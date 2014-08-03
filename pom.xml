@@ -49,8 +49,9 @@
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>gwt-maven-plugin</artifactId>
                 <configuration>
-                    <runTarget>GwtBootstrap3Demo.html</runTarget>
+                    <runTarget>DianaUIDemo.html</runTarget>
                     <hostedWebapp>${webappDirectory}</hostedWebapp>
+                    <module>com.dianaui.universal.core.demo.DianaUIDemo</module>
                 </configuration>
             </plugin>
         </plugins>

@@ -18,7 +18,7 @@
   limitations under the License.
   #L%
   -->
-<module rename-to="GwtBootstrap3Demo">
+<module rename-to="DianaUIDemo">
     <inherits name="com.google.gwt.uibinder.UiBinder"/>
     <inherits name="com.google.gwt.inject.Inject"/>
     <inherits name="com.dianaui.universal.core.DianaUICore"/>
