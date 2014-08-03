@@ -4,9 +4,9 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>org.gwtbootstrap3</groupId>
-        <artifactId>gwtbootstrap3-parent</artifactId>
-        <version>0.8-SNAPSHOT</version>
+        <groupId>com.dianaui</groupId>
+        <artifactId>dianaui-universal</artifactId>
+        <version>0.1-SNAPSHOT</version>
     </parent>
 
     <artifactId>gwtbootstrap3-demo</artifactId>
@@ -22,14 +22,7 @@
     <dependencies>
         <dependency>
             <groupId>${project.groupId}</groupId>
-            <artifactId>gwtbootstrap3</artifactId>
-            <version>${project.version}</version>
-            <scope>provided</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>${project.groupId}</groupId>
-            <artifactId>gwtbootstrap3-extras</artifactId>
+            <artifactId>dianaui-universal-core</artifactId>
             <version>${project.version}</version>
             <scope>provided</scope>
         </dependency>
