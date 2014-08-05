@@ -67,7 +67,7 @@
                             <a href="#">Inbox
                                 <b:Badge>
                                     <b.html:Text text="12"/>
-                                    <b:Icon type="ENVELOPE"/>
+                                    <b:FontAwesomeIcon type="ENVELOPE"/>
                                     <b.html:Italic>unread</b.html:Italic>
                                 </b:Badge>
                             </a>
@@ -79,7 +79,7 @@
                         &lt;a href="#"&gt;Inbox\n
                         \s\s&lt;b:Badge&gt;\n
                         \s\s\s&lt;b:Text text="..."/&gt;\n
-                        \s\s\s&lt;b:Icon type="ENVELOPE"/&gt;\n
+                        \s\s\s&lt;b:FontAwesomeIcon type="ENVELOPE"/&gt;\n
                         \s\s\s&lt;i&gt;unread&lt;/i&gt;\n
                         \s\s&lt;/b:Badge&gt;\n
                         &lt;/a&gt;

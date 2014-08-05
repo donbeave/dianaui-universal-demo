@@ -54,10 +54,10 @@
                     <b:Heading size="H3" text="Basic Use"/>
                 </b:PanelHeader>
                 <b:PanelBody>
-                    <b:Icon type="GEAR"/>
+                    <b:FontAwesomeIcon type="GEAR"/>
                     <b.html:ClearFix/>
                     <b.html:Span>
-                        <b:Icon type="GEAR"/>
+                        <b:FontAwesomeIcon type="GEAR"/>
                         Icon With Text
                     </b.html:Span>
                     <b.html:Br/>
@@ -67,9 +67,9 @@
                 </b:PanelBody>
                 <b:PanelFooter>
                     <d:PrettyPre addStyleNames="lang-xml">
-                        &lt;b:Icon type="..."/&gt;\n\n
+                        &lt;b:FontAwesomeIcon type="..."/&gt;\n\n
                         &lt;b.html:Span&gt;\n
-                        \s\s&lt;b:Icon type="..."/&gt;\n
+                        \s\s&lt;b:FontAwesomeIcon type="..."/&gt;\n
                         \s\s&lt;...&gt;\n
                         &lt;/b.html:Span&gt;\n\n
                         &lt;b:Anchor fontAwesomeIcon="..." iconSpin="true" text="..."/&gt;\n\n
@@ -83,19 +83,19 @@
                     <b:Heading size="H3" text="Larger Icons"/>
                 </b:PanelHeader>
                 <b:PanelBody>
-                    <b:Icon addStyleNames="{style.spacing}" type="GEAR" size="LARGE"/>
-                    <b:Icon addStyleNames="{style.spacing}" type="GEAR" size="TIMES2"/>
-                    <b:Icon addStyleNames="{style.spacing}" type="GEAR" size="TIMES3"/>
-                    <b:Icon addStyleNames="{style.spacing}" type="GEAR" size="TIMES4"/>
-                    <b:Icon type="GEAR" size="TIMES5"/>
+                    <b:FontAwesomeIcon addStyleNames="{style.spacing}" type="GEAR" size="LARGE"/>
+                    <b:FontAwesomeIcon addStyleNames="{style.spacing}" type="GEAR" size="TIMES2"/>
+                    <b:FontAwesomeIcon addStyleNames="{style.spacing}" type="GEAR" size="TIMES3"/>
+                    <b:FontAwesomeIcon addStyleNames="{style.spacing}" type="GEAR" size="TIMES4"/>
+                    <b:FontAwesomeIcon type="GEAR" size="TIMES5"/>
                 </b:PanelBody>
                 <b:PanelFooter>
                     <d:PrettyPre addStyleNames="lang-xml">
-                        &lt;b:Icon type="..." size="LARGE"/&gt;\n
-                        &lt;b:Icon type="..." size="TIMES2"/&gt;\n
-                        &lt;b:Icon type="..." size="TIMES3"/&gt;\n
-                        &lt;b:Icon type="..." size="TIMES4"/&gt;\n
-                        &lt;b:Icon type="..." size="TIMES5"/&gt;\n
+                        &lt;b:FontAwesomeIcon type="..." size="LARGE"/&gt;\n
+                        &lt;b:FontAwesomeIcon type="..." size="TIMES2"/&gt;\n
+                        &lt;b:FontAwesomeIcon type="..." size="TIMES3"/&gt;\n
+                        &lt;b:FontAwesomeIcon type="..." size="TIMES4"/&gt;\n
+                        &lt;b:FontAwesomeIcon type="..." size="TIMES5"/&gt;\n
                     </d:PrettyPre>
                 </b:PanelFooter>
             </b:Panel>
@@ -105,12 +105,12 @@
                     <b:Heading size="H3" text="Spinning"/>
                 </b:PanelHeader>
                 <b:PanelBody>
-                    <b:Icon addStyleNames="{style.spacing}" type="GEAR" size="LARGE" spin="true"/>
-                    <b:Icon type="GEAR" size="TIMES5" spin="true"/>
+                    <b:FontAwesomeIcon addStyleNames="{style.spacing}" type="GEAR" size="LARGE" spin="true"/>
+                    <b:FontAwesomeIcon type="GEAR" size="TIMES5" spin="true"/>
                 </b:PanelBody>
                 <b:PanelFooter>
                     <d:PrettyPre addStyleNames="lang-xml">
-                        &lt;b:Icon type="..." size="LARGE" spin="true"/&gt;
+                        &lt;b:FontAwesomeIcon type="..." size="LARGE" spin="true"/&gt;
                     </d:PrettyPre>
                 </b:PanelFooter>
             </b:Panel>
@@ -120,19 +120,19 @@
                     <b:Heading size="H3" text="Rotated &amp; Flipped"/>
                 </b:PanelHeader>
                 <b:PanelBody>
-                    <b:Icon addStyleNames="{style.spacing}" type="FLAG_O" size="LARGE" rotate="ROTATE_90"/>
-                    <b:Icon addStyleNames="{style.spacing}" type="FLAG_O" size="LARGE" rotate="ROTATE_180"/>
-                    <b:Icon addStyleNames="{style.spacing}" type="FLAG_O" size="LARGE" rotate="ROTATE_270"/>
-                    <b:Icon addStyleNames="{style.spacing}" type="FLAG_O" size="LARGE" flip="HORIZONTAL"/>
-                    <b:Icon addStyleNames="{style.spacing}" type="FLAG_O" size="LARGE" flip="VERTICAL"/>
+                    <b:FontAwesomeIcon addStyleNames="{style.spacing}" type="FLAG_O" size="LARGE" rotate="ROTATE_90"/>
+                    <b:FontAwesomeIcon addStyleNames="{style.spacing}" type="FLAG_O" size="LARGE" rotate="ROTATE_180"/>
+                    <b:FontAwesomeIcon addStyleNames="{style.spacing}" type="FLAG_O" size="LARGE" rotate="ROTATE_270"/>
+                    <b:FontAwesomeIcon addStyleNames="{style.spacing}" type="FLAG_O" size="LARGE" flip="HORIZONTAL"/>
+                    <b:FontAwesomeIcon addStyleNames="{style.spacing}" type="FLAG_O" size="LARGE" flip="VERTICAL"/>
                 </b:PanelBody>
                 <b:PanelFooter>
                     <d:PrettyPre addStyleNames="lang-xml">
-                        &lt;b:Icon type="..." size="LARGE" rotate="ROTATE_90"/&gt;\n
-                        &lt;b:Icon type="..." size="LARGE" rotate="ROTATE_180"/&gt;\n
-                        &lt;b:Icon type="..." size="LARGE" rotate="ROTATE_270"/&gt;\n
-                        &lt;b:Icon type="..." size="LARGE" flip="HORIZONTAL"/&gt;\n
-                        &lt;b:Icon type="..." size="LARGE" flip="VERTICAL"/&gt;\n
+                        &lt;b:FontAwesomeIcon type="..." size="LARGE" rotate="ROTATE_90"/&gt;\n
+                        &lt;b:FontAwesomeIcon type="..." size="LARGE" rotate="ROTATE_180"/&gt;\n
+                        &lt;b:FontAwesomeIcon type="..." size="LARGE" rotate="ROTATE_270"/&gt;\n
+                        &lt;b:FontAwesomeIcon type="..." size="LARGE" flip="HORIZONTAL"/&gt;\n
+                        &lt;b:FontAwesomeIcon type="..." size="LARGE" flip="VERTICAL"/&gt;\n
                     </d:PrettyPre>
                 </b:PanelFooter>
             </b:Panel>
@@ -143,15 +143,15 @@
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b:IconStack>
-                        <b:Icon type="SQUARE_O" stackBase="true"/>
-                        <b:Icon type="TWITTER" stackTop="true"/>
+                        <b:FontAwesomeIcon type="SQUARE_O" stackBase="true"/>
+                        <b:FontAwesomeIcon type="TWITTER" stackTop="true"/>
                     </b:IconStack>
                 </b:PanelBody>
                 <b:PanelFooter>
                     <d:PrettyPre addStyleNames="lang-xml">
                         &lt;b:IconStack&gt;\n
-                        \s\s&lt;b:Icon type="..." stackBase="true"/&gt;\n
-                        \s\s&lt;b:Icon type="..." stackTop="true"/&gt;\n
+                        \s\s&lt;b:FontAwesomeIcon type="..." stackBase="true"/&gt;\n
+                        \s\s&lt;b:FontAwesomeIcon type="..." stackTop="true"/&gt;\n
                         &lt;/b:IconStack&gt;\n
                     </d:PrettyPre>
                 </b:PanelFooter>

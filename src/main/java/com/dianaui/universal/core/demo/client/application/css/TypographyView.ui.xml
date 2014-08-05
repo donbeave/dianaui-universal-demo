@@ -44,7 +44,7 @@
                     <b:Heading size="H6" text="h6. Bootstrap heading" subtext="subtext"/>
                     <b:Heading size="H6" subtext="subtext" text="Test"/>
                     <b:Heading size="H1">
-                        <b:Icon type="GEAR"/>
+                        <b:FontAwesomeIcon type="GEAR"/>
                         <b.html:Text text="h1. Heading with Icon"/>
                     </b:Heading>
                     <b:Heading size="H1">
@@ -61,7 +61,7 @@
                         &lt;b:Heading size="H5" subtext="..."/&gt;\n
                         &lt;b:Heading size="H6" subtext="..."/&gt;\n\n
                         &lt;b:Heading size="H1"&gt;\n
-                        \s\s&lt;b:Icon type="..."/&gt;\n
+                        \s\s&lt;b:FontAwesomeIcon type="..."/&gt;\n
                         \s\s&lt;b.html:Text type="..."/&gt;\n
                         &lt;/b:Heading&gt;\n
                     </d:PrettyPre>
