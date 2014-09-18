@@ -26,20 +26,19 @@
     <b:Row>
         <b:Column size="XS_12">
             <b:Jumbotron>
-                <b:Heading size="H1" text="Demo for GwtBootstrap3"/>
+                <b:Heading size="H1" text="Demo for Diana UI" subText="Universal"/>
 
                 <b.html:Paragraph>
-                    A
+                    A native
                     <a href="http://gwtproject.org/">GWT</a>
-                    wrapper for
+                    widgets library, based on
                     <a href="http://getbootstrap.com/">Bootstrap</a>
                 </b.html:Paragraph>
 
                 <b.html:Paragraph>
                     This is the demo for
-                    <a href="https://github.com/gwtbootstrap3/gwtbootstrap3">GwtBootstrap3</a>
-                    version 0.8. For previous releases please go to:
-                    <a href="https://github.com/gwtbootstrap3/gwtbootstrap3/releases">Previous Releases</a>
+                    <a href="https://github.com/donbeave/dianaui-universal">GwtBootstrap3</a>
+                    version 0.1-SNAPSHOT.
                 </b.html:Paragraph>
             </b:Jumbotron>
         </b:Column>
