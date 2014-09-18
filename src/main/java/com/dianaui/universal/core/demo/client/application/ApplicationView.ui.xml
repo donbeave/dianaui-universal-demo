@@ -43,15 +43,14 @@
             <b:Navbar position="FIXED_TOP">
                 <b:Container>
                     <b:NavbarHeader>
-                        <b:NavbarBrand targetHistoryToken="{nameTokens.getHome}" ui:field="brand">GwtBootstrap3 v0.8
-                        </b:NavbarBrand>
+                        <b:NavbarBrand targetHistoryToken="{nameTokens.getHome}" text="Diana UI Universal" ui:field="brand"/>
                         <b:NavbarCollapseButton/>
                     </b:NavbarHeader>
                     <b:NavbarCollapse b:id="navbar-collapse">
                         <b:NavbarNav>
                             <b:AnchorListItem text="Getting started" targetHistoryToken="{nameTokens.getSetup}"/>
                             <b:ListDropDown>
-                                <b:AnchorButton toggle="DROPDOWN">CSS</b:AnchorButton>
+                                <b:AnchorButton toggle="DROPDOWN" text="CSS"/>
                                 <b:DropDownMenu>
                                     <b:AnchorListItem targetHistoryToken="{nameTokens.getButtons}" text="Buttons"/>
                                     <b:AnchorListItem targetHistoryToken="{nameTokens.getCode}" text="Code"/>
@@ -67,7 +66,7 @@
                                 </b:DropDownMenu>
                             </b:ListDropDown>
                             <b:ListDropDown>
-                                <b:AnchorButton toggle="DROPDOWN">Components</b:AnchorButton>
+                                <b:AnchorButton toggle="DROPDOWN" text="Components"/>
                                 <b:DropDownMenu>
                                     <b:AnchorListItem targetHistoryToken="{nameTokens.getAlerts}" text="Alerts"/>
                                     <b:AnchorListItem targetHistoryToken="{nameTokens.getBadges}" text="Badges"/>
@@ -101,7 +100,7 @@
                                 </b:DropDownMenu>
                             </b:ListDropDown>
                             <b:ListDropDown>
-                                <b:AnchorButton toggle="DROPDOWN">JavaScript</b:AnchorButton>
+                                <b:AnchorButton toggle="DROPDOWN" text="JavaScript"/>
                                 <b:DropDownMenu>
                                     <!--<b:AnchorListItem targetHistoryToken="{nameTokens.getAffix}">Affix</b:AnchorListItem>-->
                                     <b:AnchorListItem targetHistoryToken="{nameTokens.getCarousel}" text="Carousel"/>
@@ -113,7 +112,7 @@
                                 </b:DropDownMenu>
                             </b:ListDropDown>
                             <b:ListDropDown>
-                                <b:AnchorButton toggle="DROPDOWN">Extras</b:AnchorButton>
+                                <b:AnchorButton toggle="DROPDOWN" text="Extras"/>
                                 <b:DropDownMenu>
                                     <b:AnchorListItem targetHistoryToken="{nameTokens.getBootbox}" text="Bootbox"/>
                                     <b:AnchorListItem targetHistoryToken="{nameTokens.getCard}" text="Cards"/>
