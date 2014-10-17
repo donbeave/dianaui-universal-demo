@@ -110,7 +110,7 @@
                         <b:Column size="MD_6">
                             <b:InputGroup>
                                 <b:InputGroupButton>
-                                    <b:RadioButton/>
+                                    <b:RadioButton name="test"/>
                                 </b:InputGroupButton>
                                 <b:TextBox autoComplete="false"/>
                             </b:InputGroup>

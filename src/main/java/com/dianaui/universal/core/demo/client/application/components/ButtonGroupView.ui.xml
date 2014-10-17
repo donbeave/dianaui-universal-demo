@@ -192,7 +192,7 @@
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b:ButtonGroup toggle="BUTTONS">
-                        <b:CheckBoxButton active="true">Option 1</b:CheckBoxButton>
+                        <b:CheckBoxButton value="true">Option 1</b:CheckBoxButton>
                         <b:CheckBoxButton>Option 2</b:CheckBoxButton>
                         <b:CheckBoxButton>Option 3</b:CheckBoxButton>
                         <b:CheckBoxButton enabled="false">Option 4</b:CheckBoxButton>
@@ -217,11 +217,12 @@
                 <b:PanelBody>
                     <b:Row>
                         <b:Column size="SM_6 MD_4">
-                            <b:ButtonGroup toggle="BUTTONS" name="groupName">
-                                <b:RadioButton ui:field="button1">Option 1</b:RadioButton>
-                                <b:RadioButton ui:field="button2" active="true">Option 2</b:RadioButton>
-                                <b:RadioButton ui:field="button3">Option 3</b:RadioButton>
-                                <b:RadioButton enabled="false">Option 4</b:RadioButton>
+                            <b:ButtonGroup toggle="BUTTONS">
+                                <b:RadioButton name="groupName" ui:field="button1">Option 1</b:RadioButton>
+                                <b:RadioButton name="groupName" value="true" ui:field="button2">Option 2
+                                </b:RadioButton>
+                                <b:RadioButton name="groupName" ui:field="button3">Option 3</b:RadioButton>
+                                <b:RadioButton name="groupName" enabled="false">Option 4</b:RadioButton>
                             </b:ButtonGroup>
                         </b:Column>
                         <b:Column size="SM_6 MD_8">

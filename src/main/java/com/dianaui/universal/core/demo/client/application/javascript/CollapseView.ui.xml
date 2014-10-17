@@ -94,8 +94,7 @@
                         <b:Panel>
                             <b:PanelHeader>
                                 <b:Heading size="H4">
-                                    <b:Anchor toggle="COLLAPSE" dataParent="#accordion"
-                                              text="Collapse Group #1"/>
+                                    <b:Anchor toggle="COLLAPSE" text="Collapse Group #1"/>
                                 </b:Heading>
                             </b:PanelHeader>
                             <b:PanelCollapse b:id="collapseOne" in="true">
@@ -109,8 +108,7 @@
                         <b:Panel>
                             <b:PanelHeader>
                                 <b:Heading size="H4">
-                                    <b:Anchor toggle="COLLAPSE" dataParent="#accordion"
-                                              text="Collapse Group #2"/>
+                                    <b:Anchor toggle="COLLAPSE" text="Collapse Group #2"/>
                                 </b:Heading>
                             </b:PanelHeader>
                             <b:PanelCollapse b:id="collapseTwo">
@@ -124,8 +122,7 @@
                         <b:Panel>
                             <b:PanelHeader>
                                 <b:Heading size="H4">
-                                    <b:Anchor fontAwesomeIcon="ANCHOR" toggle="COLLAPSE" dataParent="#accordion"
-                                              text="Collapse Group #3"/>
+                                    <b:Anchor fontAwesomeIcon="ANCHOR" toggle="COLLAPSE" text="Collapse Group #3"/>
                                 </b:Heading>
                             </b:PanelHeader>
                             <b:PanelCollapse b:id="collapseThree">
