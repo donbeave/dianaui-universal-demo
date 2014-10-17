@@ -102,6 +102,26 @@
 
             <b:Panel>
                 <b:PanelHeader>
+                    <b:Heading size="H3" text="Fade dismissable"/>
+                </b:PanelHeader>
+                <b:PanelBody>
+                    <b:Alert addStyleNames="{style.margin-fix}" fade="true" dismissable="true">
+                        <b.html:Strong text="Title"/>
+                        <b.html:Text text="Description"/>
+                    </b:Alert>
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <d:PrettyPre addStyleNames="lang-xml">
+                        &lt;b:Alert type="SUCCESS" dismissable="true"&gt;\n
+                        \s\s&lt;b.html:Strong text="..."/&gt;\n
+                        \s\s&lt;b.html:Text text="..."/&gt;\n
+                        &lt;/b:Alert&gt;\n
+                    </d:PrettyPre>
+                </b:PanelFooter>
+            </b:Panel>
+
+            <b:Panel>
+                <b:PanelHeader>
                     <b:Heading size="H3" text="Links Inside"/>
                 </b:PanelHeader>
                 <b:PanelBody>
