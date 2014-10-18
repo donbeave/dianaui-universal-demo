@@ -21,6 +21,8 @@ package com.dianaui.universal.core.demo.client.application;
 
 import com.dianaui.universal.core.demo.client.application.components.*;
 import com.dianaui.universal.core.demo.client.application.css.*;
+import com.dianaui.universal.core.demo.client.application.extras.DateTimePickerPresenter;
+import com.dianaui.universal.core.demo.client.application.extras.DateTimePickerView;
 import com.dianaui.universal.core.demo.client.application.general.HomePresenter;
 import com.dianaui.universal.core.demo.client.application.general.HomeView;
 import com.dianaui.universal.core.demo.client.application.general.SetupPresenter;
@@ -80,5 +82,8 @@ public class ApplicationModule extends AbstractPresenterModule {
         bindPresenter(PopoverPresenter.class, PopoverPresenter.MyView.class, PopoverView.class, PopoverPresenter.MyProxy.class);
         bindPresenter(TooltipPresenter.class, TooltipPresenter.MyView.class, TooltipView.class, TooltipPresenter.MyProxy.class);
         bindPresenter(TabPresenter.class, TabPresenter.MyView.class, TabView.class, TabPresenter.MyProxy.class);
+
+        // Extras Views
+        bindPresenter(DateTimePickerPresenter.class, DateTimePickerPresenter.MyView.class, DateTimePickerView.class, DateTimePickerPresenter.MyProxy.class);
     }
 }

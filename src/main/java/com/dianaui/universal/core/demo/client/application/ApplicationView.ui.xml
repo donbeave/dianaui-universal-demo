@@ -43,7 +43,8 @@
             <b:Navbar position="FIXED_TOP">
                 <b:Container>
                     <b:NavbarHeader>
-                        <b:NavbarBrand targetHistoryToken="{nameTokens.getHome}" text="Diana UI Universal" ui:field="brand"/>
+                        <b:NavbarBrand targetHistoryToken="{nameTokens.getHome}" text="Diana UI Universal"
+                                       ui:field="brand"/>
                         <b:NavbarCollapseButton/>
                     </b:NavbarHeader>
                     <b:NavbarCollapse b:id="navbar-collapse">
