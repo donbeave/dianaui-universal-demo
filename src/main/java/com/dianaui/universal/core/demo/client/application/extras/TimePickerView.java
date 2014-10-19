@@ -19,10 +19,7 @@
  */
 package com.dianaui.universal.core.demo.client.application.extras;
 
-import com.dianaui.universal.core.client.ui.DateTimeBox;
-import com.google.gwt.i18n.shared.DateTimeFormat;
 import com.google.gwt.uibinder.client.UiBinder;
-import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.user.client.ui.Widget;
 import com.google.inject.Inject;
 import com.gwtplatform.mvp.client.ViewImpl;
@@ -30,18 +27,12 @@ import com.gwtplatform.mvp.client.ViewImpl;
 /**
  * @author <a href='mailto:donbeave@gmail.com'>Alexey Zhokhov</a>
  */
-public class DateTimePickerView extends ViewImpl implements DateTimePickerPresenter.MyView {
-
-    @UiField(provided = true)
-    DateTimeBox timeBox;
-
-    interface Binder extends UiBinder<Widget, DateTimePickerView> {
+public class TimePickerView extends ViewImpl implements TimePickerPresenter.MyView {
+    interface Binder extends UiBinder<Widget, TimePickerView> {
     }
 
     @Inject
-    DateTimePickerView(final Binder uiBinder) {
-        timeBox = new DateTimeBox(DateTimeFormat.getFormat(DateTimeFormat.PredefinedFormat.TIME_SHORT));
+    TimePickerView(final Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
     }
-
 }

@@ -30,57 +30,61 @@
     <b:Row>
         <b:Column size="XS_12">
 
-            <b:PageHeader text="Date/Time Picker"/>
-
+            <b:PageHeader text="Time Picker"/>
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="H3" text="Date and time"/>
+                    <b:Heading size="H3" text="Basic"/>
                 </b:PanelHeader>
                 <b:PanelBody>
-                    <b:DateTimeBox/>
+                    <b:TimeBox/>
                 </b:PanelBody>
                 <b:PanelFooter>
                     <d:PrettyPre addStyleNames="lang-xml">
-                        &lt;b:DateTimeBox/&gt;\n
+                        &lt;b:TimeBox/&gt;\n
                     </d:PrettyPre>
                 </b:PanelFooter>
             </b:Panel>
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="H3" text="Only date"/>
+                    <b:Heading size="H3" text="AM/PM format"/>
                 </b:PanelHeader>
                 <b:PanelBody>
-                    <b:DateTimeBox timeEnabled="false"/>
+                    <b:TimeBox hourFormat="_12"/>
                 </b:PanelBody>
                 <b:PanelFooter>
                     <d:PrettyPre addStyleNames="lang-xml">
-                        &lt;b:DateTimeBox timeEnabled="false"/&gt;\n
+                        &lt;b:TimeBox hourFormat="_12"/&gt;\n
                     </d:PrettyPre>
                 </b:PanelFooter>
             </b:Panel>
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="H3" text="Only time"/>
+                    <b:Heading size="H3" text="24 format"/>
                 </b:PanelHeader>
                 <b:PanelBody>
-                    <b:DateTimeBox popupPosition="TOP_CENTER" dateEnabled="false" ui:field="timeBox"/>
+                    <b:TimeBox hourFormat="_24"/>
                 </b:PanelBody>
                 <b:PanelFooter>
-                    <b:Heading size="H4" text="Java code"/>
-
-                    <d:PrettyPre addStyleNames="lang-java">
-                        @UiField(provided = true)\n
-                        DateTimeBox timeBox;\n\n
-                        // in constructor\n
-                        timeBox = new DateTimeBox(DateTimeFormat.getFormat(DateTimeFormat.PredefinedFormat.TIME_SHORT));
-                    </d:PrettyPre>
-
-                    <b:Heading size="H4" text="UiBinder"/>
-
                     <d:PrettyPre addStyleNames="lang-xml">
-                        &lt;b:DateTimeBox popupPosition="TOP_CENTER" dateEnabled="false" ui:field="timeBox"/&gt;\n
+                        &lt;b:TimeBox hourFormat="_24"/&gt;\n
+                    </d:PrettyPre>
+                </b:PanelFooter>
+            </b:Panel>
+
+            <b:Panel>
+                <b:PanelHeader>
+                    <b:Heading size="H3" text="Time (with seconds)"/>
+                </b:PanelHeader>
+                <b:PanelBody>
+                    <b:TimeBox popupPosition="TOP_LEFT" secondsEnabled="true" minuteStep="10" secondStep="5"
+                               defaultTime="00:00:00"/>
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <d:PrettyPre addStyleNames="lang-xml">
+                        &lt;b:TimeBox popupPosition="TOP_LEFT" secondsEnabled="true" minuteStep="10" secondStep="5"
+                        defaultTime="00:00:00"/&gt;\n
                     </d:PrettyPre>
                 </b:PanelFooter>
             </b:Panel>

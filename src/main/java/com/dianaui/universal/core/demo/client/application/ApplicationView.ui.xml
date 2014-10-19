@@ -118,7 +118,9 @@
                                     <b:AnchorListItem targetHistoryToken="{nameTokens.getBootbox}" text="Bootbox"/>
                                     <b:AnchorListItem targetHistoryToken="{nameTokens.getCard}" text="Cards"/>
                                     <b:AnchorListItem targetHistoryToken="{nameTokens.getDatetimePicker}"
-                                                      text="DateTimePicker"/>
+                                                      text="Date/Time Picker"/>
+                                    <b:AnchorListItem targetHistoryToken="{nameTokens.getTimePicker}"
+                                                      text="Time Picker"/>
                                     <b:AnchorListItem targetHistoryToken="{nameTokens.getFullCalendar}"
                                                       text="FullCalendar"/>
                                     <b:AnchorListItem targetHistoryToken="{nameTokens.getGrowl}" text="Growl"/>

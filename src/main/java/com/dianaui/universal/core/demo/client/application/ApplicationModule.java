@@ -23,6 +23,8 @@ import com.dianaui.universal.core.demo.client.application.components.*;
 import com.dianaui.universal.core.demo.client.application.css.*;
 import com.dianaui.universal.core.demo.client.application.extras.DateTimePickerPresenter;
 import com.dianaui.universal.core.demo.client.application.extras.DateTimePickerView;
+import com.dianaui.universal.core.demo.client.application.extras.TimePickerPresenter;
+import com.dianaui.universal.core.demo.client.application.extras.TimePickerView;
 import com.dianaui.universal.core.demo.client.application.general.HomePresenter;
 import com.dianaui.universal.core.demo.client.application.general.HomeView;
 import com.dianaui.universal.core.demo.client.application.general.SetupPresenter;
@@ -85,5 +87,6 @@ public class ApplicationModule extends AbstractPresenterModule {
 
         // Extras Views
         bindPresenter(DateTimePickerPresenter.class, DateTimePickerPresenter.MyView.class, DateTimePickerView.class, DateTimePickerPresenter.MyProxy.class);
+        bindPresenter(TimePickerPresenter.class, TimePickerPresenter.MyView.class, TimePickerView.class, TimePickerPresenter.MyProxy.class);
     }
 }

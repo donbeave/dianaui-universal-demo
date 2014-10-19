@@ -70,6 +70,7 @@ public class NameTokens {
 
     // Extra Pages
     public static final String DATETIME_PICKER = "dateTimePicker";
+    public static final String TIME_PICKER = "timePicker";
     public static final String BOOTBOX = "bootbox";
     public static final String CARD = "card";
     public static final String SELECT = "select";
@@ -236,6 +237,10 @@ public class NameTokens {
 
     public static String getDatetimePicker() {
         return DATETIME_PICKER;
+    }
+
+    public static String getTimePicker() {
+        return TIME_PICKER;
     }
 
     public static String getBootbox() {

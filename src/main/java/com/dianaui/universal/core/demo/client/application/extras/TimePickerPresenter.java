@@ -32,20 +32,20 @@ import com.gwtplatform.mvp.client.proxy.ProxyPlace;
 /**
  * @author <a href='mailto:donbeave@gmail.com'>Alexey Zhokhov</a>
  */
-public class DateTimePickerPresenter extends Presenter<DateTimePickerPresenter.MyView, DateTimePickerPresenter.MyProxy> {
+public class TimePickerPresenter extends Presenter<TimePickerPresenter.MyView, TimePickerPresenter.MyProxy> {
 
     public interface MyView extends View {
     }
 
-    @NameToken(NameTokens.DATETIME_PICKER)
+    @NameToken(NameTokens.TIME_PICKER)
     @ProxyCodeSplit
-    public interface MyProxy extends ProxyPlace<DateTimePickerPresenter> {
+    public interface MyProxy extends ProxyPlace<TimePickerPresenter> {
     }
 
     @Inject
-    public DateTimePickerPresenter(final EventBus eventBus,
-                                   final MyView view,
-                                   final MyProxy proxy) {
+    public TimePickerPresenter(final EventBus eventBus,
+                               final MyView view,
+                               final MyProxy proxy) {
         super(eventBus, view, proxy, ApplicationPresenter.TYPE_SetMainContent);
     }
 }
