@@ -28,20 +28,6 @@
         .top {
             top: 100px !important;
         }
-
-        .logRow {
-            border: 1px solid #888888;
-            padding: 5px;
-            min-height: 300px;
-        }
-
-        .logTitle {
-            margin-right: 10px;
-        }
-
-        .margin {
-            margin-left: 10px;
-        }
     </ui:style>
     <b:Row>
         <b:Column size="XS_12">
@@ -53,8 +39,7 @@
                     <b:Heading size="H3" text="Basic"/>
                 </b:PanelHeader>
                 <b:PanelBody>
-                    <b:Modal title="Cupcake ipsum" closable="true" fade="true" backdrop="STATIC" keyboard="true"
-                             b:id="myModal" ui:field="modal">
+                    <b:Modal title="Cupcake ipsum" closable="true" keyboard="true" ui:field="basicModal">
                         <b:ModalBody>
                             <g:HTML>
                                 <p>
@@ -80,66 +65,145 @@
                                     Cheesecake bear claw tootsie roll muffin cupcake chocolate cake. Tootsie roll
                                     croissant carrot cake gingerbread.
                                 </p>
-                                <p>
-                                    Croissant lollipop brownie wafer croissant cupcake. Powder sweet roll jujubes
-                                    brownie oat cake. Unerdwear.com apple pie croissant oat cake wafer. Jelly chupa
-                                    chups muffin sugar plum chocolate cake chocolate cake pastry. Sugar plum jelly beans
-                                    muffin tiramisu topping macaroon donut jelly-o croissant. Ice cream powder chocolate
-                                    cake chocolate cake macaroon halvah pie carrot cake. Tart liquorice cake
-                                    unerdwear.com cookie unerdwear.com. Chupa chups cotton candy pudding bear claw candy
-                                    canes biscuit topping. Donut lemon drops gummies gingerbread gummi bears. Cheesecake
-                                    gingerbread pie danish pie brownie fruitcake chupa chups. Marshmallow wafer tart
-                                    macaroon jelly-o danish. Tiramisu jelly beans chocolate bar gingerbread bonbon
-                                    cupcake macaroon gummies pastry. Jelly-o chupa chups lollipop lemon drops dessert
-                                    tootsie roll oat cake cookie.
-                                </p>
-                                <p>
-                                    Dessert candy canes cheesecake tart marzipan. Bonbon marzipan bear claw ice cream
-                                    liquorice powder. Pastry pudding danish lollipop jujubes sweet roll sweet tiramisu
-                                    chocolate bar. Caramels bear claw pastry muffin dessert cotton candy bonbon
-                                    fruitcake. Pastry brownie bonbon applicake ice cream topping bear claw applicake.
-                                    Brownie halvah jujubes wafer. Sesame snaps candy canes caramels. Apple pie sweet
-                                    roll lollipop. Donut candy gingerbread halvah pudding toffee liquorice chocolate
-                                    icing. Carrot cake gingerbread muffin cookie. Candy tootsie roll candy canes halvah
-                                    sweet cheesecake sesame snaps sugar plum. Liquorice caramels lemon drops lollipop
-                                    jelly croissant.
-                                </p>
-                                <p>
-                                    Jelly macaroon soufflé chocolate. Marshmallow muffin jelly beans croissant chocolate
-                                    bar gummi bears pudding apple pie. Candy canes sweet roll liquorice chocolate cake
-                                    candy dessert oat cake donut unerdwear.com. Gummies pie tart icing dessert applicake
-                                    lollipop. Oat cake applicake sweet gummi bears sweet icing. Danish soufflé jelly
-                                    cotton candy applicake. Carrot cake danish chocolate bar topping. Pudding fruitcake
-                                    cookie dragée topping gingerbread chocolate donut. Dessert chocolate toffee gummi
-                                    bears gummies liquorice. Carrot cake pie sesame snaps cupcake dessert sugar plum ice
-                                    cream. Tart tiramisu halvah toffee gummi bears muffin jelly-o. Macaroon jujubes ice
-                                    cream chocolate bar jelly wafer croissant. Gingerbread candy canes pudding.
-                                </p>
                             </g:HTML>
                         </b:ModalBody>
                         <b:ModalFooter>
                             <b:Button type="PRIMARY">Do something</b:Button>
-                            <b:Button type="DANGER">Close</b:Button>
+                            <b:Button type="DANGER" ui:field="basicCloseButton">Close</b:Button>
                         </b:ModalFooter>
                     </b:Modal>
-                    <b:Button toggle="MODAL" type="PRIMARY" size="LARGE">Click to show modal
-                    </b:Button>
+                    <b:Button type="PRIMARY" size="LARGE" ui:field="basicButton">Click to show modal</b:Button>
                 </b:PanelBody>
                 <b:PanelFooter>
+                    <b:Heading size="H4" text="UiBinder"/>
+
                     <d:PrettyPre addStyleNames="lang-xml">
-                        &lt;b:Modal title="Cupcake ipsum" closable="true" fade="true" dataBackdrop="STATIC"
-                        dataKeyboard="true" b:id="myModal"&gt;\n
+                        &lt;b:Modal title="Cupcake ipsum" closable="true" keyboard="true" ui:field="basicModal"&gt;\n
                         \s\s&lt;b:ModalBody&gt;\n
-                        \s\s\s\s&lt;g:HTML&gt;Modal body...&lt;/g:HTML&gt;\n
+                        \s\s\s\s&lt;g:HTML&gt;\n
+                        \s\s\s\s\s\s&lt;p&gt;Cake icing icing topping...&lt;/p&gt;\n
+                        \s\s\s\s\s\s&lt;p&gt;Lemon drops fruitcake powder...&lt;/p&gt;\n
+                        \s\s\s\s&lt;/g:HTML&gt;\n
                         \s\s&lt;/b:ModalBody&gt;\n
                         \s\s&lt;b:ModalFooter&gt;\n
-                        \s\s\s\s&lt;b:Button type="PRIMARY"&gt;Do something&lt;/b:Button&gt;\n
-                        \s\s\s\s&lt;b:Button type="DANGER" dataDismiss="MODAL"&gt;Close&lt;/b:Button&gt;\n
+                        \s\s&lt;b:Button type="PRIMARY"&gt;Do something&lt;/b:Button&gt;\n
+                        \s\s&lt;b:Button type="DANGER" ui:field="basicCloseButton"&gt;Close&lt;/b:Button&gt;\n
                         \s\s&lt;/b:ModalFooter&gt;\n
                         &lt;/b:Modal&gt;\n
+                        &lt;b:Button type="PRIMARY" size="LARGE" ui:field="basicButton"&gt;Click to show modal&lt;/b:Button&gt;
+                    </d:PrettyPre>
+
+                    <b:Heading size="H4" text="Java code"/>
+
+                    <d:PrettyPre addStyleNames="lang-java">
+                        @UiHandler("basicButton")\n
+                        void onModalButtonClicked(ClickEvent event) {\n
+                        \s\sbasicModal.show();\n
+                        }\n
                         \n
-                        &lt;b:Button dataTarget="#myModal" toggle="MODAL" type="PRIMARY" size="LARGE"&gt;Click to
-                        show modal&lt;/b:Button&gt;
+                        @UiHandler("basicCloseButton")\n
+                        void onCloseButtonClicked(ClickEvent event) {\n
+                        \s\sbasicModal.hide();\n
+                        }\n
+                    </d:PrettyPre>
+                </b:PanelFooter>
+            </b:Panel>
+
+            <b:Panel>
+                <b:PanelHeader>
+                    <b:Heading size="H3" text="With Custom Header"/>
+                </b:PanelHeader>
+                <b:PanelBody>
+                    <b:Modal fade="false" ui:field="modalWithCustomHeader">
+                        <b:ModalHeader>
+                            <g:HTML>
+                                <h4>Custom header</h4>
+                            </g:HTML>
+                        </b:ModalHeader>
+                        <b:ModalBody>
+                            <b.html:Paragraph alignment="CENTER">Hello World!</b.html:Paragraph>
+                            <b.html:Span>Click on cover backdrop to close this modal.</b.html:Span>
+                        </b:ModalBody>
+                    </b:Modal>
+                    <b:Button type="PRIMARY" ui:field="customHeaderButton">Open modal</b:Button>
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <b:Heading size="H4" text="UiBinder"/>
+
+                    <d:PrettyPre addStyleNames="lang-xml">
+                        &lt;b:Modal fade="false" ui:field="modalWithCustomHeader"&gt;\n
+                        \s\s&lt;b:ModalHeader&gt;\n
+                        \s\s\s\s&lt;g:HTML&gt;\n
+                        \s\s\s\s\s\s&lt;h4&gt;Custom header&lt;/h4&gt;\n
+                        \s\s\s\s&lt;/g:HTML&gt;\n
+                        \s\s&lt;/b:ModalHeader&gt;\n
+                        \s\s&lt;b:ModalBody&gt;\n
+                        \s\s\s\s&lt;b.html:Paragraph alignment="CENTER"&gt;Hello World!&lt;/b.html:Paragraph&gt;\n
+                        \s\s\s\s&lt;b.html:Span&gt;Click on cover backdrop to close this modal.&lt;/b.html:Span&gt;\n
+                        \s\s&lt;/b:ModalBody&gt;\n
+                        &lt;/b:Modal&gt;\n
+                        &lt;b:Button type="PRIMARY" ui:field="customHeaderButton"&gt;Open modal&lt;/b:Button&gt;
+                    </d:PrettyPre>
+
+                    <b:Heading size="H4" text="Java code"/>
+
+                    <d:PrettyPre addStyleNames="lang-java">
+                        @UiHandler("customHeaderButton")\n
+                        void onCustomHeaderButtonClicked(ClickEvent event) {\n
+                        \s\smodalWithCustomHeader.show();\n
+                        }\n
+                    </d:PrettyPre>
+                </b:PanelFooter>
+            </b:Panel>
+
+            <b:Panel>
+                <b:PanelHeader>
+                    <b:Heading size="H3" text="Without Backdrop"/>
+                </b:PanelHeader>
+                <b:PanelBody>
+                    <b:Modal backdrop="FALSE" ui:field="modalWithoutBackdrop">
+                        <b:ModalBody>
+                            <g:HTMLPanel>
+                                <span>
+                                    It's only one way to close this modal. Please click
+                                    <b:Button type="DANGER" ui:field="withoutBackdropHideBtn">this</b:Button>
+                                    button.
+                                </span>
+                            </g:HTMLPanel>
+                        </b:ModalBody>
+                    </b:Modal>
+                    <b:Button type="PRIMARY" ui:field="withoutBackdropShowBtn">Show</b:Button>
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <b:Heading size="H4" text="UiBinder"/>
+
+                    <d:PrettyPre addStyleNames="lang-xml">
+                        &lt;b:Modal backdrop="FALSE" ui:field="modalWithoutBackdrop"&gt;\n
+                        \s\s&lt;b:ModalBody&gt;\n
+                        \s\s\s\s&lt;g:HTMLPanel&gt;\n
+                        \s\s\s\s\s\s&lt;span&gt;\n
+                        \s\s\s\s\s\s\s\sIt's only one way to close this modal. Please click\n
+                        \s\s\s\s\s\s\s\s&lt;b:Button type="DANGER" ui:field="withoutBackdropHideBtn"&gt;this&lt;/b:Button&gt;\n
+                        \s\s\s\s\s\s\s\sbutton.\n
+                        \s\s\s\s\s\s&lt;/span&gt;\n
+                        \s\s\s\s&lt;/g:HTMLPanel&gt;\n
+                        \s\s&lt;/b:ModalBody&gt;\n
+                        &lt;/b:Modal&gt;\n
+                        &lt;b:Button type="PRIMARY" ui:field="withoutBackdropShowBtn"&gt;Show&lt;/b:Button&gt;\n
+                    </d:PrettyPre>
+
+                    <b:Heading size="H4" text="Java code"/>
+
+                    <d:PrettyPre addStyleNames="lang-java">
+                        @UiHandler("withoutBackdropShowBtn")\n
+                        void onWithoutBackdropShowBtnClicked(ClickEvent event) {\n
+                        \s\smodalWithoutBackdrop.show();\n
+                        }\n
+                        \n
+                        @UiHandler("withoutBackdropHideBtn")\n
+                        void onWithoutBackdropHideBtnClicked(ClickEvent event) {\n
+                        \s\smodalWithoutBackdrop.hide();\n
+                        }
                     </d:PrettyPre>
                 </b:PanelFooter>
             </b:Panel>
@@ -149,63 +213,69 @@
                     <b:Heading size="H3" text="Only One Modal Active"/>
                 </b:PanelHeader>
                 <b:PanelBody>
-                    <b:Modal title="Modal 1" closable="true" fade="true" b:id="modal1">
+                    <b:Modal title="Modal 1" closable="true" ui:field="modal1">
                         <b:ModalBody>
-                            <b:Button toggle="MODAL" type="PRIMARY">Modal 2</b:Button>
+                            <b:Button ui:field="modal2Button">Modal 2</b:Button>
                         </b:ModalBody>
                     </b:Modal>
-                    <b:Modal addStyleNames="{style.top}" title="Modal 2" closable="true" fade="true" b:id="modal2">
+                    <b:Modal addStyleNames="{style.top}" title="Modal 2" closable="true" ui:field="modal2">
                         <b:ModalBody>
-                            <b:Button toggle="MODAL" type="PRIMARY">Modal 3</b:Button>
+                            <b:Button ui:field="modal3Button">Modal 3</b:Button>
                         </b:ModalBody>
                     </b:Modal>
-                    <b:Modal title="Modal 3" closable="true" fade="true" b:id="modal3">
+                    <b:Modal title="Modal 3" closable="true" hideOtherModals="true" ui:field="modal3">
                         <b:ModalBody>
                             <b.html:Span>Modal 3 (ONLY ONE!)</b.html:Span>
                         </b:ModalBody>
                     </b:Modal>
-                    <b:Button toggle="MODAL" type="PRIMARY">Modal 1</b:Button>
+                    <b:Button toggle="MODAL" type="PRIMARY" ui:field="modal1Button">Modal 1</b:Button>
                 </b:PanelBody>
                 <b:PanelFooter>
+                    <b:Heading size="H4" text="UiBinder"/>
+
                     <d:PrettyPre addStyleNames="lang-xml">
-                        &lt;b:Modal ... &gt;\n
-                        \s\s...\n
+                        &lt;ui:style&gt;\n
+                        \s\s.top {\n
+                        \s\s\s\stop: 100px !important;\n
+                        \s\s}\n
+                        &lt;/ui:style&gt;\n
+                        &lt;b:Modal title="Modal 1" closable="true" ui:field="modal1"&gt;\n
+                        \s\s&lt;b:ModalBody&gt;\n
+                        \s\s\s\s&lt;b:Button ui:field="modal2Button"&gt;Modal 2&lt;/b:Button&gt;\n
+                        \s\s&lt;/b:ModalBody&gt;\n
                         &lt;/b:Modal&gt;\n
-                        &lt;b:Modal ... &gt;\n
-                        \s\s...\n
+                        &lt;b:Modal addStyleNames="{style.top}" title="Modal 2" closable="true" ui:field="modal2"&gt;\n
+                        \s\s&lt;b:ModalBody&gt;\n
+                        \s\s\s\s&lt;b:Button ui:field="modal3Button"&gt;Modal 3&lt;/b:Button&gt;\n
+                        \s\s&lt;/b:ModalBody&gt;\n
                         &lt;/b:Modal&gt;\n
-                        &lt;b:Modal ... hideOtherModals="true"&gt;\n
-                        \s\s...\n
+                        &lt;b:Modal title="Modal 3" closable="true" hideOtherModals="true" ui:field="modal3"&gt;\n
+                        \s\s&lt;b:ModalBody&gt;\n
+                        \s\s\s\s&lt;b.html:Span&gt;Modal 3 (ONLY ONE!)&lt;/b.html:Span&gt;\n
+                        \s\s&lt;/b:ModalBody&gt;\n
                         &lt;/b:Modal&gt;\n
+                        &lt;b:Button toggle="MODAL" type="PRIMARY" ui:field="modal1Button"&gt;Modal 1&lt;/b:Button&gt;\n
+                    </d:PrettyPre>
+
+                    <b:Heading size="H4" text="Java code"/>
+
+                    <d:PrettyPre addStyleNames="lang-java">
+                        @UiHandler("modal1Button")
+                        void onModal1ButtonClicked(ClickEvent event) {\n
+                        \s\smodal1.show();\n
+                        }\n
+                        \n
+                        @UiHandler("modal2Button")\n
+                        void onModal2ButtonClicked(ClickEvent event) {\n
+                        \s\smodal2.show();\n
+                        }\n
+                        \n
+                        @UiHandler("modal3Button")\n
+                        void onModal3ButtonClicked(ClickEvent event) {\n
+                        \s\smodal3.show();\n
+                        }
                     </d:PrettyPre>
                 </b:PanelFooter>
-            </b:Panel>
-
-            <b:Panel>
-                <b:PanelHeader>
-                    <b:Heading size="H3" text="Events"/>
-                </b:PanelHeader>
-                <b:PanelBody>
-                    <b:Row>
-                        <b:Column size="SM_6 MD_4">
-                            <b:Modal title="Event Modal" closable="true" fade="true" b:id="eventModal"
-                                     ui:field="eventModal">
-                                <b:ModalBody>
-                                    <b.html:Span>I fire events!</b.html:Span>
-                                </b:ModalBody>
-                            </b:Modal>
-                            <b:Button toggle="MODAL" type="PRIMARY">Event Modal</b:Button>
-                            <b:Button type="PRIMARY" addStyleNames="{style.margin}" ui:field="createModal">Create In
-                                Java
-                            </b:Button>
-                        </b:Column>
-                        <b:Column addStyleNames="{style.logRow}" size="SM_6 MD_8">
-                            <b.html:Strong text="Event Log" addStyleNames="{style.logTitle}"/>
-                            <b:Button addStyleNames="pull-right" text="Clear Log" ui:field="clearLogButton"/>
-                            <g:FlowPanel ui:field="logRow"/>
-                        </b:Column>
-                    </b:Row>
-                </b:PanelBody>
             </b:Panel>
         </b:Column>
     </b:Row>
