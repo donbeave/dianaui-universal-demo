@@ -37,7 +37,7 @@
 
                 <b.html:Paragraph>
                     This is the demo for
-                    <a href="https://github.com/donbeave/dianaui-universal">GwtBootstrap3</a>
+                    <a href="https://github.com/donbeave/dianaui-universal">Diana UI Universal</a>
                     version 0.1-SNAPSHOT.
                 </b.html:Paragraph>
             </b:Jumbotron>

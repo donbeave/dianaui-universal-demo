@@ -115,26 +115,14 @@
                             <b:ListDropDown>
                                 <b:AnchorButton toggle="DROPDOWN" text="Extras"/>
                                 <b:DropDownMenu>
-                                    <b:AnchorListItem targetHistoryToken="{nameTokens.getBootbox}" text="Bootbox"/>
-                                    <b:AnchorListItem targetHistoryToken="{nameTokens.getCard}" text="Cards"/>
                                     <b:AnchorListItem targetHistoryToken="{nameTokens.getDatetimePicker}"
                                                       text="Date/Time Picker"/>
                                     <b:AnchorListItem targetHistoryToken="{nameTokens.getTimePicker}"
                                                       text="Time Picker"/>
-                                    <b:AnchorListItem targetHistoryToken="{nameTokens.getFullCalendar}"
-                                                      text="FullCalendar"/>
-                                    <b:AnchorListItem targetHistoryToken="{nameTokens.getGrowl}" text="Growl"/>
-                                    <b:AnchorListItem targetHistoryToken="{nameTokens.getSelect}" text="Select"/>
-                                    <b:AnchorListItem targetHistoryToken="{nameTokens.getSlider}" text="Slider"/>
-                                    <b:AnchorListItem targetHistoryToken="{nameTokens.getSummernote}"
-                                                      text="Summernote"/>
-                                    <b:AnchorListItem targetHistoryToken="{nameTokens.getToggleSwitch}"
-                                                      text="ToggleSwitch"/>
-                                    <b:AnchorListItem targetHistoryToken="{nameTokens.getOffline}" text="Offline"/>
                                 </b:DropDownMenu>
                             </b:ListDropDown>
                             <b:AnchorListItem text="Fork on GitHub"
-                                              href="https://github.com/gwtbootstrap3"/>
+                                              href="https://github.com/donbeave/dianaui-universal"/>
                             <b:AnchorListItem text="View Javadoc" href="apidocs/index.html"/>
                         </b:NavbarNav>
                     </b:NavbarCollapse>

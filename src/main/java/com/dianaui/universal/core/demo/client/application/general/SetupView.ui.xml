@@ -34,11 +34,11 @@
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b.html:Paragraph>
-                        For the basic setup just inherit the basic GwtBootstrap3 module into your *.gwt.xml.
+                        For the basic setup just inherit the basic DianaUICore module into your *.gwt.xml.
                     </b.html:Paragraph>
                     <d:PrettyPre addStyleNames="lang-xml">
                         &lt;module&gt;\n
-                        \s\s&lt;inherits name="com.dianaui.universal.core.GwtBootstrap3"/&gt;\n
+                        \s\s&lt;inherits name="com.dianaui.universal.core.DianaUICore"/&gt;\n
                         &lt;/module&gt;\n
                     </d:PrettyPre>
                 </b:PanelBody>
@@ -50,12 +50,12 @@
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b.html:Paragraph>
-                        For the setup with a Bootstrap2 look-a-like theme inherit the GwtBootstrap3Theme into your
+                        For the setup with a Bootstrap2 look-a-like theme inherit the DianaUICoreTheme into your
                         *.gwt.xml.
                     </b.html:Paragraph>
                     <d:PrettyPre addStyleNames="lang-xml">
                         &lt;module&gt;\n
-                        \s\s&lt;inherits name="com.dianaui.universal.core.GwtBootstrap3Theme"/&gt;\n
+                        \s\s&lt;inherits name="com.dianaui.universal.core.DianaUICoreTheme"/&gt;\n
                         &lt;/module&gt;\n
                     </d:PrettyPre>
                 </b:PanelBody>
@@ -67,7 +67,7 @@
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b.html:Paragraph>
-                        1. For the setup with a custom theme inherit the GwtBootstrap3 your *.gwt.xml.
+                        1. For the setup with a custom theme inherit the DianaUICoreCDN your *.gwt.xml.
                         <br/>
                         2. Next, download the theme that you wish to use.
                         <br/>
@@ -76,7 +76,7 @@
                         <br/>
                         4. If you use a resource folder, link the resource folder as public path in your *.gwt.xml.
                         <br/>
-                        5. Link the CSS/JS files into your *.gwt.xml AFTER the GwtBootstrap3 inherit.
+                        5. Link the CSS/JS files into your *.gwt.xml AFTER the DianaUICoreCDN inherit.
                         <br/>
                         <br/>
                         ** Since your CSS files are linked last onto the page they will be the priority stylesheet and
@@ -85,30 +85,13 @@
                     </b.html:Paragraph>
                     <d:PrettyPre addStyleNames="lang-xml">
                         &lt;module&gt;\n
-                        \s\s&lt;inherits name="com.dianaui.universal.core.GwtBootstrap3"/&gt;\n\n
+                        \s\s&lt;inherits name="com.dianaui.universal.core.DianaUICoreCDN"/&gt;\n\n
                         \s\s&lt;public path='resource'&gt;\n
                         \s\s\s\s&lt;include name='css/*.css'/&gt;\n
                         \s\s\s\s&lt;include name='js/*.js'/&gt;\n
                         \s\s&lt;/public&gt;\n\n
                         \s\s&lt;stylesheet src='css/theme.css'/&gt;\n
                         \s\s&lt;script src='js/theme.js'/&gt;\n
-                        &lt;/module&gt;\n
-                    </d:PrettyPre>
-                </b:PanelBody>
-            </b:Panel>
-
-            <b:Panel>
-                <b:PanelHeader>
-                    <b:Heading size="H3" text="Support for IE8"/>
-                </b:PanelHeader>
-                <b:PanelBody>
-                    <b.html:Paragraph>
-                        For support for IE8 you need to inherit the Respond module into your
-                        *.gwt.xml.
-                    </b.html:Paragraph>
-                    <d:PrettyPre addStyleNames="lang-xml">
-                        &lt;module&gt;\n
-                        \s\s&lt;inherits name="com.dianaui.universal.core.extras.respond.Respond"/&gt;\n
                         &lt;/module&gt;\n
                     </d:PrettyPre>
                 </b:PanelBody>
